@@ -1,0 +1,389 @@
+{
+  "threshold": 2.0,
+  "threshold_note": "AQ1001 sensor accuracy ±2 µg/m³",
+  "total_data_hours": 2184,
+  "sensor_w": 22.0,
+  "n_poles": 4,
+  "results": [
+    {
+      "method": "Corr",
+      "k": 2,
+      "mean_off_hours": 961,
+      "mean_valid_hours": 2100,
+      "mean_off_pct": 45.8,
+      "sensor_kwh_per_pole": 7.25,
+      "sensor_kwh_total": 29.0
+    },
+    {
+      "method": "Corr",
+      "k": 3,
+      "mean_off_hours": 942,
+      "mean_valid_hours": 2073,
+      "mean_off_pct": 45.4,
+      "sensor_kwh_per_pole": 7.19,
+      "sensor_kwh_total": 28.76
+    },
+    {
+      "method": "IDW",
+      "k": 3,
+      "mean_off_hours": 926,
+      "mean_valid_hours": 2073,
+      "mean_off_pct": 44.7,
+      "sensor_kwh_per_pole": 7.08,
+      "sensor_kwh_total": 28.32
+    },
+    {
+      "method": "Corr",
+      "k": 1,
+      "mean_off_hours": 892,
+      "mean_valid_hours": 2130,
+      "mean_off_pct": 41.8,
+      "sensor_kwh_per_pole": 6.62,
+      "sensor_kwh_total": 26.48
+    },
+    {
+      "method": "Mean",
+      "k": 3,
+      "mean_off_hours": 866,
+      "mean_valid_hours": 2073,
+      "mean_off_pct": 41.8,
+      "sensor_kwh_per_pole": 6.62,
+      "sensor_kwh_total": 26.48
+    },
+    {
+      "method": "IDW",
+      "k": 2,
+      "mean_off_hours": 880,
+      "mean_valid_hours": 2108,
+      "mean_off_pct": 41.7,
+      "sensor_kwh_per_pole": 6.61,
+      "sensor_kwh_total": 26.44
+    },
+    {
+      "method": "Mean",
+      "k": 2,
+      "mean_off_hours": 820,
+      "mean_valid_hours": 2108,
+      "mean_off_pct": 38.9,
+      "sensor_kwh_per_pole": 6.16,
+      "sensor_kwh_total": 24.64
+    },
+    {
+      "method": "IDW",
+      "k": 1,
+      "mean_off_hours": 580,
+      "mean_valid_hours": 2120,
+      "mean_off_pct": 27.4,
+      "sensor_kwh_per_pole": 4.34,
+      "sensor_kwh_total": 17.36
+    },
+    {
+      "method": "Mean",
+      "k": 1,
+      "mean_off_hours": 580,
+      "mean_valid_hours": 2120,
+      "mean_off_pct": 27.4,
+      "sensor_kwh_per_pole": 4.34,
+      "sensor_kwh_total": 17.36
+    }
+  ],
+  "per_station": [
+    {
+      "target": "Xingye",
+      "method": "Mean",
+      "k": 1,
+      "off_hours": 532,
+      "valid_hours": 2122,
+      "off_pct": 25.1
+    },
+    {
+      "target": "Xingye",
+      "method": "Mean",
+      "k": 2,
+      "off_hours": 896,
+      "valid_hours": 2111,
+      "off_pct": 42.4
+    },
+    {
+      "target": "Xingye",
+      "method": "Mean",
+      "k": 3,
+      "off_hours": 926,
+      "valid_hours": 2073,
+      "off_pct": 44.7
+    },
+    {
+      "target": "Xingye",
+      "method": "IDW",
+      "k": 1,
+      "off_hours": 532,
+      "valid_hours": 2122,
+      "off_pct": 25.1
+    },
+    {
+      "target": "Xingye",
+      "method": "IDW",
+      "k": 2,
+      "off_hours": 941,
+      "valid_hours": 2111,
+      "off_pct": 44.6
+    },
+    {
+      "target": "Xingye",
+      "method": "IDW",
+      "k": 3,
+      "off_hours": 986,
+      "valid_hours": 2073,
+      "off_pct": 47.6
+    },
+    {
+      "target": "Xingye",
+      "method": "Corr",
+      "k": 1,
+      "off_hours": 1161,
+      "valid_hours": 2144,
+      "off_pct": 54.2
+    },
+    {
+      "target": "Xingye",
+      "method": "Corr",
+      "k": 2,
+      "off_hours": 1125,
+      "valid_hours": 2106,
+      "off_pct": 53.4
+    },
+    {
+      "target": "Xingye",
+      "method": "Corr",
+      "k": 3,
+      "off_hours": 1017,
+      "valid_hours": 2073,
+      "off_pct": 49.1
+    },
+    {
+      "target": "Lixing",
+      "method": "Mean",
+      "k": 1,
+      "off_hours": 532,
+      "valid_hours": 2122,
+      "off_pct": 25.1
+    },
+    {
+      "target": "Lixing",
+      "method": "Mean",
+      "k": 2,
+      "off_hours": 654,
+      "valid_hours": 2111,
+      "off_pct": 31.0
+    },
+    {
+      "target": "Lixing",
+      "method": "Mean",
+      "k": 3,
+      "off_hours": 757,
+      "valid_hours": 2073,
+      "off_pct": 36.5
+    },
+    {
+      "target": "Lixing",
+      "method": "IDW",
+      "k": 1,
+      "off_hours": 532,
+      "valid_hours": 2122,
+      "off_pct": 25.1
+    },
+    {
+      "target": "Lixing",
+      "method": "IDW",
+      "k": 2,
+      "off_hours": 758,
+      "valid_hours": 2111,
+      "off_pct": 35.9
+    },
+    {
+      "target": "Lixing",
+      "method": "IDW",
+      "k": 3,
+      "off_hours": 801,
+      "valid_hours": 2073,
+      "off_pct": 38.6
+    },
+    {
+      "target": "Lixing",
+      "method": "Corr",
+      "k": 1,
+      "off_hours": 615,
+      "valid_hours": 2113,
+      "off_pct": 29.1
+    },
+    {
+      "target": "Lixing",
+      "method": "Corr",
+      "k": 2,
+      "off_hours": 818,
+      "valid_hours": 2084,
+      "off_pct": 39.3
+    },
+    {
+      "target": "Lixing",
+      "method": "Corr",
+      "k": 3,
+      "off_hours": 821,
+      "valid_hours": 2073,
+      "off_pct": 39.6
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Mean",
+      "k": 1,
+      "off_hours": 629,
+      "valid_hours": 2117,
+      "off_pct": 29.7
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Mean",
+      "k": 2,
+      "off_hours": 749,
+      "valid_hours": 2106,
+      "off_pct": 35.6
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Mean",
+      "k": 3,
+      "off_hours": 860,
+      "valid_hours": 2073,
+      "off_pct": 41.5
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "IDW",
+      "k": 1,
+      "off_hours": 629,
+      "valid_hours": 2117,
+      "off_pct": 29.7
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "IDW",
+      "k": 2,
+      "off_hours": 790,
+      "valid_hours": 2106,
+      "off_pct": 37.5
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "IDW",
+      "k": 3,
+      "off_hours": 904,
+      "valid_hours": 2073,
+      "off_pct": 43.6
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Corr",
+      "k": 1,
+      "off_hours": 629,
+      "valid_hours": 2117,
+      "off_pct": 29.7
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Corr",
+      "k": 2,
+      "off_hours": 789,
+      "valid_hours": 2106,
+      "off_pct": 37.5
+    },
+    {
+      "target": "Jingxinhu",
+      "method": "Corr",
+      "k": 3,
+      "off_hours": 918,
+      "valid_hours": 2073,
+      "off_pct": 44.3
+    },
+    {
+      "target": "Xinan",
+      "method": "Mean",
+      "k": 1,
+      "off_hours": 629,
+      "valid_hours": 2117,
+      "off_pct": 29.7
+    },
+    {
+      "target": "Xinan",
+      "method": "Mean",
+      "k": 2,
+      "off_hours": 981,
+      "valid_hours": 2106,
+      "off_pct": 46.6
+    },
+    {
+      "target": "Xinan",
+      "method": "Mean",
+      "k": 3,
+      "off_hours": 922,
+      "valid_hours": 2073,
+      "off_pct": 44.5
+    },
+    {
+      "target": "Xinan",
+      "method": "IDW",
+      "k": 1,
+      "off_hours": 629,
+      "valid_hours": 2117,
+      "off_pct": 29.7
+    },
+    {
+      "target": "Xinan",
+      "method": "IDW",
+      "k": 2,
+      "off_hours": 1029,
+      "valid_hours": 2106,
+      "off_pct": 48.9
+    },
+    {
+      "target": "Xinan",
+      "method": "IDW",
+      "k": 3,
+      "off_hours": 1012,
+      "valid_hours": 2073,
+      "off_pct": 48.8
+    },
+    {
+      "target": "Xinan",
+      "method": "Corr",
+      "k": 1,
+      "off_hours": 1161,
+      "valid_hours": 2144,
+      "off_pct": 54.2
+    },
+    {
+      "target": "Xinan",
+      "method": "Corr",
+      "k": 2,
+      "off_hours": 1111,
+      "valid_hours": 2106,
+      "off_pct": 52.8
+    },
+    {
+      "target": "Xinan",
+      "method": "Corr",
+      "k": 3,
+      "off_hours": 1010,
+      "valid_hours": 2073,
+      "off_pct": 48.7
+    }
+  ],
+  "best": {
+    "method": "Corr",
+    "k": 2,
+    "mean_off_hours": 961,
+    "mean_valid_hours": 2100,
+    "mean_off_pct": 45.8,
+    "sensor_kwh_per_pole": 7.25,
+    "sensor_kwh_total": 29.0
+  }
+}
