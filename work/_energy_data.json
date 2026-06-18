@@ -38,7 +38,12 @@
         137.1,
         78.9,
         80.5
-      ]
+      ],
+      "sensor_off_pct": 54.2,
+      "sensor_best_method": "Corr K=1",
+      "sensor_saved_kwh": 8.59,
+      "total_saved_kwh": 46.4,
+      "total_co2_kg": 23.62
     },
     {
       "id": "lixing_pole",
@@ -78,7 +83,12 @@
         137.1,
         78.9,
         80.5
-      ]
+      ],
+      "sensor_off_pct": 39.6,
+      "sensor_best_method": "Corr K=3",
+      "sensor_saved_kwh": 6.27,
+      "total_saved_kwh": 44.1,
+      "total_co2_kg": 22.45
     },
     {
       "id": "jingxinhu_pole",
@@ -118,7 +128,12 @@
         137.1,
         78.9,
         80.5
-      ]
+      ],
+      "sensor_off_pct": 44.3,
+      "sensor_best_method": "Corr K=3",
+      "sensor_saved_kwh": 7.02,
+      "total_saved_kwh": 44.8,
+      "total_co2_kg": 22.8
     },
     {
       "id": "xinan_pole",
@@ -158,7 +173,12 @@
         137.1,
         78.9,
         80.5
-      ]
+      ],
+      "sensor_off_pct": 54.2,
+      "sensor_best_method": "Corr K=1",
+      "sensor_saved_kwh": 8.59,
+      "total_saved_kwh": 46.4,
+      "total_co2_kg": 23.62
     }
   ],
   "summary": {
@@ -166,7 +186,10 @@
     "monthly_kwh": 261.6,
     "saved_kwh": 151.2,
     "co2_kg": 77.0,
-    "saved_pct": 36.6
+    "saved_pct": 36.6,
+    "sensor_kwh_total": 30.5,
+    "total_saved_kwh": 181.7,
+    "total_co2_kg": 92.5
   },
   "grid_co2_factor": 0.509,
   "conv_street_monthly_kwh": 54.0,
