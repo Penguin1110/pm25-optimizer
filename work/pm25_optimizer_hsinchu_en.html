@@ -853,11 +853,10 @@ function initEnergy() {
     </div>`).join('');
 
   // Coverage table
-  const maxOff = Math.max(...sc.results.map(r => r.mean_off_pct));
   const tbody = document.getElementById('cTableBody');
   tbody.innerHTML = sc.results.map(r => {
     const isBest = r.method === best.method && r.k === best.k;
-    const fill = Math.round(r.mean_off_pct / maxOff * 100);
+    const fill = r.mean_off_pct;
     return `<tr class="${isBest ? 'best-row' : ''}">
       <td>${r.method}</td>
       <td>${r.k}</td>
