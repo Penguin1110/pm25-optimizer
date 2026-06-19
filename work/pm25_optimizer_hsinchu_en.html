@@ -842,7 +842,7 @@ function initEnergy() {
   const kpis = [
     { val: s.current_w + ' W',          lbl: 'Current Load (4 poles)',  cls: '',      sub: 'simulated · daytime' },
     { val: s.monthly_kwh + ' kWh',      lbl: 'Monthly Consumption',     cls: '',      sub: '4 poles combined' },
-    { val: s.total_saved_kwh + ' kWh',  lbl: 'Total Savings / mo',      cls: 'green', sub: 'LED ' + s.saved_kwh + ' + sensor ' + s.sensor_kwh_total + ' kWh' },
+    { val: s.sensor_kwh_total + ' kWh', lbl: 'Sensor Savings / mo',     cls: 'green', sub: 'via imputation off-duty' },
     { val: s.total_co2_kg + ' kg',      lbl: 'CO\u2082 Reduction / mo', cls: 'teal',  sub: 'LED + sensor off-duty' },
   ];
   kpiGrid.innerHTML = kpis.map(k => `
@@ -871,18 +871,17 @@ function initEnergy() {
   // Summary
   const rows = ed.poles.map(p =>
     `<tr><td>${p.name}</td><td>${p.sensor_best_method}</td>
-     <td>${p.sensor_off_pct}%</td><td style='color:#0891b2'>+${p.sensor_saved_kwh} kWh</td>
-     <td style='color:#16a34a;font-weight:700'>${p.total_saved_kwh} kWh</td></tr>`
+     <td>${p.sensor_off_pct}%</td>
+     <td style='color:#0891b2;font-weight:700'>+${p.sensor_saved_kwh} kWh</td></tr>`
   ).join('');
   document.getElementById('coverageSummary').innerHTML =
     `<table style='width:100%;font-size:9px;border-collapse:collapse'>
       <tr style='font-weight:700;color:var(--muted);border-bottom:1px solid #d1fae5'>
-        <td>Pole</td><td>Best Method</td><td>Off %</td>
-        <td>Sensor Saved</td><td>Total Saved/mo</td>
+        <td>Pole</td><td>Best Method</td><td>Off %</td><td>Sensor Saved/mo</td>
       </tr>${rows}
       <tr style='border-top:2px solid #bbf7d0;font-weight:800;color:#15803d;padding-top:3px'>
-        <td colspan='2'>All 4 poles combined</td><td></td>
-        <td>+${s.sensor_kwh_total} kWh</td><td>${s.total_saved_kwh} kWh</td>
+        <td colspan='3'>All 4 poles combined</td>
+        <td style='font-weight:800'>+${s.sensor_kwh_total} kWh</td>
       </tr>
     </table>`;
 }
