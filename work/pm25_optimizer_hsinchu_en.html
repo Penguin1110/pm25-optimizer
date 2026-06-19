@@ -853,18 +853,19 @@ function initEnergy() {
     </div>`).join('');
 
   // Coverage table
+  const maxKwh = Math.max(...sc.results.map(r => r.sensor_kwh_total));
   const tbody = document.getElementById('cTableBody');
   tbody.innerHTML = sc.results.map(r => {
     const isBest = r.method === best.method && r.k === best.k;
-    const fill = Math.round(r.mean_off_pct);
+    const fill = Math.round(r.sensor_kwh_total / maxKwh * 100);
     return `<tr class="${isBest ? 'best-row' : ''}">
       <td>${r.method}</td>
       <td>${r.k}</td>
       <td>${r.mean_off_hours} / ${r.mean_valid_hours} h</td>
-      <td>${r.mean_off_pct}%
+      <td>${r.mean_off_pct}%</td>
+      <td>${r.sensor_kwh_total}
         <span class="off-pct-bar"><span class="off-pct-fill" style="width:${fill}%"></span></span>
       </td>
-      <td>${r.sensor_kwh_total}</td>
     </tr>`;
   }).join('');
 
