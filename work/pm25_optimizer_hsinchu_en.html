@@ -335,7 +335,7 @@
           <table class="ctable">
             <thead><tr>
               <th>Method</th><th>K</th><th>Off-Hours</th><th>Off %</th>
-              <th>Sensor Saved (kWh/mo)</th>
+              <th>Sensor Saved/pole (kWh/mo)</th>
             </tr></thead>
             <tbody id="cTableBody"></tbody>
           </table>
@@ -864,7 +864,7 @@ function initEnergy() {
       <td>${r.mean_off_pct}%
         <span class="off-pct-bar"><span class="off-pct-fill" style="width:${fill}%"></span></span>
       </td>
-      <td>${r.sensor_kwh_total}</td>
+      <td>${r.sensor_kwh_per_pole}</td>
     </tr>`;
   }).join('');
 
